@@ -46,14 +46,14 @@ const Output = ({ editorRef, language }) => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full bg-black text-white">
       <button
         onClick={runCode}
-        className="rounded-md px-4 py-2 text-sm font-medium text-white bg-blue-400 hover:bg-blue-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+        className="rounded-md px-4 py-2 text-sm font-medium text-white bg-blue-400 my-2 hover:bg-blue-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
       >
         Run Code
       </button>
-      <div className="flex flex-col items-start w-full mt-4">
+      <div className="flex flex-col items-start w-full mt-4 px-2 py-4 space-y-2">
         {isLoading ? (
           <p className="text-sm font-mono text-gray-500">Running code...</p>
         ) : (
@@ -62,7 +62,7 @@ const Output = ({ editorRef, language }) => {
             <p
               key={i}
               className={`text-sm font-mono ${
-                isError ? "text-red-500" : "text-green-500"
+                isError ? "text-red-500" : "text-white"
               }`}
             >
               {line}

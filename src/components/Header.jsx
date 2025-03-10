@@ -15,11 +15,6 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm font-semibold hover:bg-gray-300">
-                About
-              </Link>
-            </li>
-            <li>
               <Link href="/editor" className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm font-semibold hover:bg-gray-300">
                 Editor
               </Link>

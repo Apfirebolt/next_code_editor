@@ -1,5 +1,6 @@
 {
-  "name": "next_github_manager",
+  "name": "next_code_editor",
+  "author": "Amit Prafulla",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +13,6 @@
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.3",
     "@monaco-editor/react": "^4.7.0",
-    "@reduxjs/toolkit": "^2.2.3",
     "axios": "^1.6.8",
     "gsap": "^3.12.5",
     "js-cookie": "^3.0.5",

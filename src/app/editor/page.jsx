@@ -26,28 +26,33 @@ export default function About() {
   return (
     <Fragment>
       <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-center text-red-700">
-            Technologies used to build this app
+      <main className="px-6">
+        <div>
+          <h1 className="text-4xl font-bold text-center text-white bg-slate-700 my-2 py-2">
+            CODE EDITOR
           </h1>
           <LanguageSelector language={language} onSelect={onSelect} />
-          <Editor
-            options={{
-              minimap: {
-                enabled: false,
-              },
-            }}
-            height="75vh"
-            theme="vs-dark"
-            language={language}
-            defaultValue={CODE_SNIPPETS[language]}
-            onMount={onMount}
-            value={value}
-            onChange={(value) => setValue(value)}
-          />
-
-        <Output editorRef={editorRef} language={language} />  
+          <div className="grid grid-cols-2 gap-4 w-full">
+            <div className="col-span-1">
+              <Editor
+                options={{
+                  minimap: {
+                    enabled: false,
+                  },
+                }}
+                height="75vh"
+                theme="vs-dark"
+                language={language}
+                defaultValue={CODE_SNIPPETS[language]}
+                onMount={onMount}
+                value={value}
+                onChange={(value) => setValue(value)}
+              />
+            </div>
+            <div className="col-span-1">
+              <Output editorRef={editorRef} language={language} />
+            </div>
+          </div>
         </div>
       </main>
       <Footer />

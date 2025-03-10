@@ -6,7 +6,7 @@ const LanguageSelector = ({ language, onSelect }) => {
   const ACTIVE_COLOR = "blue-400";
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-4 my-3 bg-slate-700">
       {languages.map(([lang, version]) => (
         <button
           key={lang}
