@@ -1,12 +1,8 @@
-"use client";
-
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Fragment } from "react";
 
 export default function Home() {
-
-  console.log("Home page")
 
   return (
     <Fragment>

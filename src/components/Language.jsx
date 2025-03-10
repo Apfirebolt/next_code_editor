@@ -6,11 +6,11 @@ const LanguageSelector = ({ language, onSelect }) => {
   const ACTIVE_COLOR = "blue-400";
 
   return (
-    <div className="flex space-x-4 my-3 bg-slate-700">
+    <div className="flex space-x-4 my-3 bg-tertiary px-2">
       {languages.map(([lang, version]) => (
         <button
           key={lang}
-          className={`rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 ${
+          className={`rounded-md px-4 py-2 text-md my-1 font-medium text-white hover:bg-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 ${
             language === lang ? `bg-${ACTIVE_COLOR}` : ""
           }`}
           onClick={() => onSelect(lang)}

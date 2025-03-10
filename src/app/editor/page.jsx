@@ -28,12 +28,12 @@ export default function About() {
       <Header />
       <main className="px-6">
         <div>
-          <h1 className="text-4xl font-bold text-center text-white bg-slate-700 my-2 py-2">
+          <h1 className="text-4xl font-bold text-center text-white bg-tertiary my-2 py-2">
             CODE EDITOR
           </h1>
           <LanguageSelector language={language} onSelect={onSelect} />
           <div className="grid grid-cols-2 gap-4 w-full">
-            <div className="col-span-1">
+            <div className="col-span-1 bg-tertiary">
               <Editor
                 options={{
                   minimap: {
