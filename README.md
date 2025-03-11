@@ -5,18 +5,17 @@
 ![Headless UI](https://img.shields.io/badge/Headless--UI-4B5563?style=for-the-badge&logo=headlessui&logoColor=white)
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 
-# Next.js Database Application for Games
+# Next.js Code Editor
 
 ## Introduction
 
-This project is a simple Next.js application that serves as a database for games. It allows users to view game entries from the API https://softgenie.org/api/games. The application is built using Next.js for server-side rendering and optimized performance. It uses Material UI for beautiful styled components following Material design patterns.
+This project is a code editor built with Next.js. It provides a robust and efficient environment for writing and editing code, leveraging the power of Next.js for server-side rendering and optimized performance. The editor supports syntax highlighting, auto-completion, and real-time collaboration features. It uses Tailwind CSS for styling, ensuring a responsive and visually appealing interface. The project is designed to enhance productivity and streamline the coding experience for developers.
 
-The project is deployed here https://next-games-database.vercel.app for the time being.
 
 ## Features
 
-- View a list of games
-- Material UI is used for UI components
+- Supports multiple languages like Java, Python, Javascript, PHP and more
+- UI components from Tailwind css and headless UI
 - Responsive design for mobile and desktop
 
 ## Technologies Used
@@ -41,8 +40,8 @@ To install the project, follow these steps:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/next_games_database.git
-    cd next_games_database
+    git clone https://github.com/apfirebolt/next_code_editor.git
+    cd next_code_editor
     ```
 
 2. Install the dependencies:
@@ -66,20 +65,20 @@ To use the application, follow these steps:
 
 ## Screenshots
 
-This is the games list page
+This is how code editor looks like
 
-![Screenshot](/screenshots/1.jpeg)
+![Screenshot](/screenshots/1.png)
 
-Screenshot of the image modal
+With Python selected as language
 
-![Screenshot](/screenshots/2.jpeg)
+![Screenshot](/screenshots/2.png)
 
 ## Project Structure
 
 After creating the project, your directory structure should look like this:
 
 ```
-next_games_database/
+next_code_editor/
 ├── node_modules/
 ├── screenshots/
 ├── public/
@@ -89,9 +88,6 @@ next_games_database/
 ├── src/
 │   ├── app/
 │   ├── components/
-|   ├── features/
-│   ├── middleware.js
-│   ├── store.js
 │   ├── next.config.mjs
 │   ├── .gitignore
 │   ├── package.json
