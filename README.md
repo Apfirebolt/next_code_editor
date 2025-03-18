@@ -9,7 +9,14 @@
 
 ## Introduction
 
-This project is a code editor built with Next.js. It provides a robust and efficient environment for writing and editing code, leveraging the power of Next.js for server-side rendering and optimized performance. The editor supports syntax highlighting, auto-completion, and real-time collaboration features. It uses Tailwind CSS for styling, ensuring a responsive and visually appealing interface. The project is designed to enhance productivity and streamline the coding experience for developers.
+This project is a code editor built with Next.js. It provides a robust and efficient environment for writing and editing code, leveraging the power of Next.js for server-side rendering and optimized performance. 
+The editor supports syntax highlighting, auto-completion, and real-time collaboration features. 
+It uses Tailwind CSS for styling, ensuring a responsive and visually appealing interface. The project is designed to enhance productivity and 
+streamline the coding experience for developers.
+
+Available for demo at https://next-code-editor.vercel.app/editor
+
+Feel free to experiment and use it as a playground 😊
 
 
 ## Features
