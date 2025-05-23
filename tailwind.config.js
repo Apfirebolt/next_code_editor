@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         sand: "#F5F5F5",
-        primary: "#48CFCB",
+        primary: "#0E2148",
         secondary: "#64748B",
         tertiary: "#424242",
         success: "#229799",

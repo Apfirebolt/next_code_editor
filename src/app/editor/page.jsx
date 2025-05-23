@@ -12,6 +12,14 @@ export default function About() {
   const editorRef = useRef();
   const [value, setValue] = useState("");
   const [language, setLanguage] = useState("javascript");
+  const [themes, setThemes] = useState([
+    "vs-dark",
+    "hc-black",
+    "light",
+    "dark",
+    "hc-light",
+  ]);
+  const [theme, setTheme] = useState("vs-dark");
 
   const onMount = (editor) => {
     editorRef.current = editor;
@@ -26,12 +34,27 @@ export default function About() {
   return (
     <Fragment>
       <Header />
-      <main className="px-6">
+      <main className="px-2">
         <div>
-          <h1 className="text-4xl font-bold text-center text-white bg-tertiary my-2 py-2">
-            CODE EDITOR
-          </h1>
-          <LanguageSelector language={language} onSelect={onSelect} />
+          <div className="flex items-center gap-4">
+            <label htmlFor="theme-select" className="font-medium">
+              Theme:
+            </label>
+            <select
+              id="theme-select"
+              value={theme}
+              onChange={(e) => setTheme(e.target.value)}
+              className="border rounded px-2 py-1 bg-white text-black"
+            >
+              {themes.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
+            </select>
+            <LanguageSelector language={language} onSelect={onSelect} />
+          </div>
+          
           <div className="grid grid-cols-2 gap-4 w-full">
             <div className="col-span-1 bg-tertiary">
               <Editor
@@ -41,7 +64,7 @@ export default function About() {
                   },
                 }}
                 height="75vh"
-                theme="vs-dark"
+                theme={theme}
                 language={language}
                 defaultValue={CODE_SNIPPETS[language]}
                 onMount={onMount}

@@ -49,7 +49,7 @@ const Output = ({ editorRef, language }) => {
     <div className="flex flex-col items-center w-full bg-tertiary text-white">
       <button
         onClick={runCode}
-        className="rounded-md px-4 py-2 text-sm font-medium text-white bg-secondary my-2 hover:bg-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+        className="rounded-md px-4 py-2 font-medium text-white bg-success my-2 hover:bg-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
       >
         Run Code
       </button>
