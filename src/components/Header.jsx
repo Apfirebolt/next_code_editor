@@ -22,6 +22,18 @@ const Header = () => {
                 <span>Editor</span>
               </Link>
             </li>
+            <li>
+              <Link href="/login" className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 font-semibold hover:bg-gray-300 flex items-center space-x-2">
+                <PencilSquareIcon className="h-5 w-5" />
+                <span>Login</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/register" className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 font-semibold hover:bg-gray-300 flex items-center space-x-2">
+                <PencilSquareIcon className="h-5 w-5" />
+                <span>Register</span>
+              </Link>
+            </li>
           </ul>
         </nav>
         <div>
