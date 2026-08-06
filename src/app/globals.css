@@ -1,3 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-sand: #F5F5F5;
+  --color-primary: #0E2148;
+  --color-secondary: #64748B;
+  --color-tertiary: #424242;
+  --color-success: #229799;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+  /* Custom Background Images / Gradients */
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+}
